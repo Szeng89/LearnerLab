@@ -4,6 +4,9 @@ public class Person {
     final long id;
     private String name;
 
+    public Person() {
+        this.id = 0L;
+    }
     public Person(long id, String name){
         this.id = id;
         this.name = name;
