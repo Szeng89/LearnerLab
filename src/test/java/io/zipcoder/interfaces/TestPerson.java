@@ -13,8 +13,14 @@ public class TestPerson {
         person1.setName(expectedName);
 
         Assert.assertEquals(person1.getName(), "Shijin");
+    }
 
+    @Test
+    public void testSet() {
+        Person person1 = new Person();
+        person1.setName("LeeBron-James");
 
+        Assert.assertEquals(person1.getName(),"LeeBron-James");
     }
 
 }
