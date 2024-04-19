@@ -13,6 +13,7 @@ public class TestInstructor  {
         Instructor dolio = new Instructor(99, "Dolio");
 
         Assert.assertTrue(dolio instanceof Teacher);
+        Assert.assertEquals(99,dolio.getId());
     }
 
     @Test
@@ -35,12 +36,12 @@ public class TestInstructor  {
     @Test
     public void lectureTest() {
         Instructor dolio = new Instructor(99, "Dolio");
-        Student studentUno = new Student(77, "Moe", 0.00);
+        Student studentUno = new Student(77, "Moe", 10.00);
         Student studentDos = new Student(55, "Gary", 0.00);
         Student[] students = new Student[]{studentUno, studentDos};
         dolio.lecture(students, 10.00);
 
-        Assert.assertEquals(5.00, studentUno.getTotalStudyTime(), .0001);
+        Assert.assertEquals(15.00, studentUno.getTotalStudyTime(), .0001);
 
 
 

@@ -7,6 +7,11 @@ public class Person {
     public Person() {
         this.id = 0L;
     }
+
+    public Person(long id){
+        this.id = id;
+    }
+
     public Person(long id, String name){
         this.id = id;
         this.name = name;

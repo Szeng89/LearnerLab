@@ -5,7 +5,7 @@ import io.zipcoder.Tests.Teacher;
 
 public class Instructor extends Person implements Teacher {
 
-
+    public Instructor(){}
     public Instructor(long id, String name) {
         super(id,name);
     }

@@ -7,21 +7,21 @@ import org.junit.Test;
 public class TestPerson {
 
     @Test
-    public void testSetGetName() {
-        Person person1 = new Person();
+    public void setGetNameTest() {
+        Person person1 = new Person(1,"Shijin");
         String expectedName = "Shijin";
 
         person1.setName(expectedName);
 
-        Assert.assertEquals(person1.getName(), "Shijin");
+        Assert.assertEquals("Shijin", person1.getName());
     }
 
     @Test
-    public void testSet() {
-        Person person1 = new Person();
+    public void setTest() {
+        Person person1 = new Person(1,"Shijin");
         person1.setName("LeeBron-James");
 
-        Assert.assertEquals(person1.getName(),"LeeBron-James");
+        Assert.assertEquals("LeeBron-James", person1.getName());
     }
 
 }

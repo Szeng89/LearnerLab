@@ -8,7 +8,7 @@ public class TestStudent {
 
     @Test
     public void implementationTest() {
-        Student Shijin = new Student();
+        Student Shijin = new Student(11, "shijin", 11.00);
 
         Assert.assertTrue(Shijin instanceof Learner);
     }
